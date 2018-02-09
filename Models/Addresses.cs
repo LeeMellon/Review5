@@ -61,10 +61,10 @@ namespace Addresses.Models
         return _book;
       }
 
-      public static List<Address> ClearAll()
+      public static void ClearAll()
       {
         _book.Clear();
-        return _book;
+
       }
 
       public void AddressSave()
@@ -81,8 +81,6 @@ namespace Addresses.Models
       {
         _book.Remove(this);
       }
-
-
 
     }
 

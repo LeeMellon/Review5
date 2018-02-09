@@ -36,5 +36,12 @@ namespace Addresses.Controllers
         return View("Index", allAddress);
       }
 
+      [HttpPost("/clearAll")]
+      public ActionResult clearAll()
+      {
+        Address.ClearAll();
+        List<Address> allAddress = Address.GetAll();
+        return View("Index", allAddress);
+      }
     }
 }
