@@ -12,10 +12,14 @@
         <ul>
         @foreach (var contact in Model)
         {
-          <li>@contact.GetName();</li>
-          <li>@contact.GetNumber();</li>
-          <li>@contact.GetAddress();</li>
-          <input type="hidden" name="removeOne" value="@contact.GetId()">
+          <li>@contact.GetName()</li>
+          <li>@contact.GetNumber()</li>
+          <li>@contact.GetAddress()</li>
+          <li>@contact.GetId()</li>
+          <form class="" action="/removeOne/@contact.GetId()" method="post">
+            <input type="hidden" name="removeOne" value="@contact.GetId()">
+            <button type="submit" name="removeOneButton">Delete Contact</button>
+          </form>
         }
       </ul>
     </div>

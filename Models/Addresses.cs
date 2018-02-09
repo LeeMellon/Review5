@@ -72,6 +72,15 @@ namespace Addresses.Models
         _book.Add(this);
       }
 
+      public static Address Find(int id)
+      {
+        return _book[id];
+      }
+
+      public void RemoveOne()
+      {
+        _book.Remove(this);
+      }
 
 
 

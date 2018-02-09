@@ -27,6 +27,14 @@ namespace Addresses.Controllers
         return View("Index", allAddress);
       }
 
+      [HttpPost("/removeOne/{id}")]
+      public ActionResult RemoveOne(int id)
+      {
+        Address selectedAddress = Address.Find(id);
+        selectedAddress.RemoveOne();
+        List<Address> allAddress = Address.GetAll();
+        return View("Index", allAddress);
+      }
 
     }
 }
