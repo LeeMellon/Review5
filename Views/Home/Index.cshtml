@@ -9,8 +9,8 @@
       <h2>(your name here)'s Address Book!</h2>
       <div class="showAll">
         <p>All Available Contacts</p>
-        @ foreach (var contact in Model)
         <ul>
+        @foreach (var contact in Model)
         {
           <li>@contact.GetName();</li>
           <li>@contact.GetNumber();</li>
@@ -22,10 +22,10 @@
       <div class="makeNew">
         <label for="makeNew">Create New Contact</label>
         <form class="makeNew" action="/makeNew" method="post">
-          <input type="text" name="newName" value=""><br>
-          <input type="text" name="newAddress" value=""><br>
-          <input type="text" name="newNumber" value=""><br>
-          <button type="submit" name="makeNewButton"></button>
+          <input type="text" name="newName" value="" placeholder="Enter Name"><br>
+          <input type="text" name="newAddress" value="" placeholder="Enter Address"><br>
+          <input type="text" name="newNumber" value="" placeholder="Enter Phone#"><br>
+          <button type="submit" name="makeNewButton">Submit New Contact</button>
         </form>
       </div>
 

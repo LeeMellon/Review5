@@ -8,7 +8,7 @@ namespace Addresses.Controllers
     public class HomeController : Controller
     {
       [HttpGet("/")]
-      public ActionResult Home()
+      public ActionResult Index()
       {
         List<Address> allAddress = Address.GetAll();
 
@@ -22,9 +22,9 @@ namespace Addresses.Controllers
         string newAddress = Request.Form["newAddress"];
         long newNumber = Convert.ToInt64(Request.Form["newNumber"]);
         Address newContact = new Address (newName, newAddress, newNumber);
-        // newContact.AddressSave();
-
-        return View("Index");
+        newContact.AddressSave();
+        List<Address> allAddress = Address.GetAll();
+        return View("Index", allAddress);
       }
 
 
