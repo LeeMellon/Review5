@@ -2,9 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Address Book</title>
   </head>
   <body>
+    <div class="container">
+      <h2>(your name here)'s Address Book!</h2>
+      <div class="showAll">
+        <p>All Available Contacts</p>
+        @ foreach (var contact in Model)
+        <ul>
+        {
+          <li>@contact.GetName();</li>
+          <li>@contact.GetNumber();</li>
+          <li>@contact.GetAddress();</li>
+          <input type="hidden" name="removeOne" value="@contact.GetId()">
+        }
+      </ul>
+    </div>
+      <div class="makeNew">
+        <label for="makeNew">Create New Contact</label>
+        <form class="makeNew" action="/makeNew" method="post">
+          <input type="text" name="newName" value=""><br>
+          <input type="text" name="newAddress" value=""><br>
+          <input type="text" name="newNumber" value=""><br>
+          <button type="submit" name="makeNewButton"></button>
+        </form>
+      </div>
 
+
+  </div>
   </body>
 </html>

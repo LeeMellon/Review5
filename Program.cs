@@ -1,7 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace GENERTIC_TEMPLATEXXXXXXXX
+namespace Addresses
 {
     public class Program
     {
