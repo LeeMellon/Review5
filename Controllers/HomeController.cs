@@ -37,7 +37,7 @@ namespace Addresses.Controllers
       }
 
       [HttpPost("/clearAll")]
-      public ActionResult clearAll()
+      public ActionResult ClearAll()
       {
         Address.ClearAll();
         List<Address> allAddress = Address.GetAll();

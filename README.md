@@ -1,37 +1,50 @@
-# _{Application Name}_
+# UhDresBok
 
-#### _{Brief description of application}, {Date of current version}_
+#### A web app that allows you to save addresses and contact info.
 
-#### By _**{List of contributors}**_
+#### By Ian Goodrich
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+UhDresBok (patent pending) is a revolution in Forgettable Technology!(C) UhDresBok relieves you of the need to remember all of those pesky details like where your loved ones and important contacts live and how to get a hold of them. But that's just the start! No longer feel like talking to Jim from High School? Just press the "Delete Contact" button and our (any day now it will be) patented ForGetMeNow system completely and permanently removes Jim from your life FOR GOOD! :)
+But that's not all. With ForGetMeNowTuuurrbo! you can remove EVERYONE from your life. Are the Feds on to your unpasteurized Velveeta smuggling ring? Are members of SHIELD/Hydra/The X-Files looking to put you in witness protection/a dark hole/an embarrassing reboot? Well grab your bugout bag and press the Delete All Contacts button and BLAMO! everyone on your list is gone like they never existed.
+!Forget having to remember contact info!
+!Forget individuals!
+!Forget everyone!
+That THREE LEVELS of FORGETTING for the price of one. Not available by mail, here's how to order...
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Download or clone from Github (repository link below)
+* From the console navigate to folder on your system and run: dotnet restore. Next run dotnet run.
+* When instructed to, open your browser and navigate to http://localhost:5000
+* Now you're ready to ForGetMeNow!
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
-
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+##Known Bugs
+* It's still ugly as sin. Not sure if I can't remember (my tiny amount of) css, or if Razor is messing things up. Flexbox failed me so I had to go really simple for now. Probably all my fault, sorry.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Find this exciting product at https://github.com/LeeMellon/Review5.git
 
-## Technologies Used
-
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+## Specs
+1. Build basic MVC framework and get "empty build" working.
+2. Design Address class
+3. Build constructor and associated methods.
+4. Do basic HTML layout.
+5. Whiteboard and implement controllers and forms.
+6. Test at each stage of implementation.
+7. Add expanded functionality (ClearAll, RemoveOne)
+8. Engage in battle to the death with CSS.
+9. Battle called at stalemate. (weird for a battle to the death I know, but I ran out of time and CSS literally cannot die.)
 
 ### License
+MIT License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+Copyright (c) 2018 Ian Goodrich
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

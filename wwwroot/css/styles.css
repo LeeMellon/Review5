@@ -1,0 +1,27 @@
+.container {
+  background-image: url("../img/space2.jpg");
+  width: 100%;
+  height: 3000px;
+  text-align: center;
+  position: absolute;
+  background-size: contain;
+  color: white;
+  font-size: 24pt;
+}
+
+.banner {
+  height: 200px;
+  width: 100%;
+  padding-top: 90px;
+  align-self: center;
+  text-align: center;
+}
+
+.contact {
+  text-align: left;
+  font-size: 16pt;
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px black;
+  width: 300px;
+}

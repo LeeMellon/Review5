@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System;
 
-
 namespace Addresses.Models
 {
     public class Address
@@ -13,7 +12,7 @@ namespace Addresses.Models
       private int _id;
 
 
-      public Address(string name, string address, long number)
+      public Address(string name, string address, long number = 10)
       {
         _name = name;
         _address = address;
