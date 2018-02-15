@@ -15,8 +15,8 @@ namespace Addresses.Controllers
         return View(allAddress);
       }
 
-      [HttpPost("/makeNew")]
-      public ActionResult MakeNewContact()
+      [HttpPost("/make")]
+      public ActionResult Make()
       {
         string newName = Request.Form["newName"];
         string newAddress = Request.Form["newAddress"];
@@ -27,8 +27,8 @@ namespace Addresses.Controllers
         return View("Index", allAddress);
       }
 
-      [HttpPost("/removeOne/{id}")]
-      public ActionResult RemoveOne(int id)
+      [HttpPost("/remove/{id}")]
+      public ActionResult Remove(int id)
       {
         Address selectedAddress = Address.Find(id);
         selectedAddress.RemoveOne();
@@ -36,8 +36,8 @@ namespace Addresses.Controllers
         return View("Index", allAddress);
       }
 
-      [HttpPost("/clearAll")]
-      public ActionResult ClearAll()
+      [HttpPost("/clear")]
+      public ActionResult Clear()
       {
         Address.ClearAll();
         List<Address> allAddress = Address.GetAll();

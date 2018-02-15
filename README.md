@@ -16,7 +16,7 @@ That THREE LEVELS of FORGETTING for the price of one. Not available by mail, her
 ## Setup/Installation Requirements
 
 * Download or clone from Github (repository link below)
-* From the console navigate to folder on your system and run: dotnet restore. Next run dotnet run.
+* From the console navigate to folder on your system and run "dotnet restore" to install necessary packages to your system. Next run "dotnet run" to launch the app.
 * When instructed to, open your browser and navigate to http://localhost:5000
 * Now you're ready to ForGetMeNow!
 

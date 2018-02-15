@@ -23,13 +23,13 @@
           <p>@contact.GetName()</p>
           <p>@contact.GetNumber()</p>
           <p>@contact.GetAddress()</p>
-          <form class="" action="/removeOne/@contact.GetId()" method="post">
+          <form class="" action="/remove/@contact.GetId()" method="post">
             <input type="hidden" name="removeOne" value="@contact.GetId()">
             <button type="submit" name="removeOneButton">Delete Contact</button>
           </form>
         </div>
         }
-        <form class="" action="/clearAll" method="post">
+        <form class="" action="/clear" method="post">
           <button type="submit" action="/clearAll" name="clearAll">Clear ALL Contacts</button>
         </form>
       </div>
@@ -37,7 +37,7 @@
     <div class="makeNew">
       <div class="makeNewBox">
         <label for="makeNew">Create New Contact</label>
-        <form class="makeNew" action="/makeNew" method="post">
+        <form class="makeNew" action="/make" method="post">
           <input type="text" name="newName" value="" placeholder="Enter Name"><br>
           <input type="text" name="newAddress" value="" placeholder="Enter Address"><br>
           <input type="number" name="newNumber" value="" placeholder="Enter Phone#"><br>
